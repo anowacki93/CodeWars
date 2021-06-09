@@ -16,8 +16,16 @@ namespace Codewars
                 c[i] = int.Parse(arr[i]);
             }
             return $"{c.Max().ToString()} {c.Min().ToString()}";
-
-
+        }
+        public int NbYear(double p0, double percent, double aug, double p)
+        {
+            int counter = 0;
+            while (p0 < p)
+            {
+                p0 += Math.Floor(p0 * (percent / 100)) + aug;
+                counter++;
+            }
+            return counter;
         }
     }
 }
