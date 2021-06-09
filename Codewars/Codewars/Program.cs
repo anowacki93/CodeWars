@@ -6,7 +6,10 @@ namespace Codewars
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var kata = new Kata();
+
+            Console.WriteLine(kata.HighAndLow("45 4 124 43 2 31"));
+
         }
     }
 }
